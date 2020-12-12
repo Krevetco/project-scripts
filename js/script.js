@@ -67,22 +67,26 @@ const personalMovieDB = {
     }
 };
 
-personalMovieDB.showMyDB();
-personalMovieDB.toggleVisibleMyDB();
-personalMovieDB.showMyDB();
-personalMovieDB.toggleVisibleMyDB();
-personalMovieDB.showMyDB();
-personalMovieDB.writeYourGenres();
+// personalMovieDB.showMyDB();
+// personalMovieDB.toggleVisibleMyDB();
+// personalMovieDB.showMyDB();
+// personalMovieDB.toggleVisibleMyDB();
+// personalMovieDB.showMyDB();
+// personalMovieDB.writeYourGenres();
+const box = document.getElementById('box');
 
+console.log(box);
 
+const btns = document.getElementsByTagName('button');
 
-// rememberMyFilms();
-// detectPersonalLevel();
-// writeYourGenres();
-// showMyDB();
-// recursiveCheckingDB(personalMovieDB);
+console.log(btns[1]);
 
+const circles = document.getElementsByClassName('circle');
 
-// function printItemDb(key, nameOfDB) {
-//     console.log(`Свойство ${key} имеет значение ${nameOfDB[key]}`)
-// }
+console.log(circles[1]);
+
+const hearths = document.querySelectorAll('.heart');
+
+hearths.forEach(item => {
+    console.log(item);
+})
